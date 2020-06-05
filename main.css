@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+.page {
+  font-family: Lato, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  display: table;
+  height: 3922px;
+  width: 1440px;
+}
+
+.page__body {
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.background-top {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(213, 32, 71, 0.8)), to(rgba(238, 61, 27, 0.8))), url(img/Rectangle-3.png);
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8)), url(img/Rectangle-3.png);
+  position: absolute;
+  width: 100%;
+  height: 782px;
+  left: 0px;
+  top: 0px;
+}
+
+.header {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 6.25rem;
+  top: 1rem;
+  color: #ffffff;
+}
+
+.header__container {
+  position: absolute;
+  display: table-column;
+  width: 100%;
+  height: 100%;
+}
+
+.header-logo {
+  display: table-cell;
+  height: 100%;
+  padding-left: 10rem;
+}
+
+.header-logo h1 {
+  font: Lato, sans-serif 1.5rem bold;
+  display: inline-block;
+}
+
+.header-logo img {
+  display: inline-block;
+}
+
+.main-nav {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.main-nav .nav-items {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+
+.main-nav .nav-item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.language-switch {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.language-switch p {
+  display: inline-block;
+}
+
+.language-switch img {
+  display: inline-block;
+}
+
+.login-button {
+  display: table-cell;
+}
+
+.login-button button {
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
