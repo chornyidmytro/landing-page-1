@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 
 $colors: (
     background: #ffffff,
@@ -12,7 +13,8 @@ $fonts: (
     title-2: 2.25rem bold,
     text-1: 1.5rem bold,
     text-2: 1.125rem bold,
-    text-3: 0.875rem bold,
+    text-3: 0.875rem normal,
+    text-4: 0.75rem normal,
 ); 
 
 .page {
@@ -63,14 +65,19 @@ top: 0px;
         display: table-cell;
         height: 100%;
         padding-left: 10rem;
+        padding-top: 2rem;
 
         h1 {
-        font: Lato, sans-serif map-get($fonts, text-1);
+        font: map-get($fonts, text-2) Lato, sans-serif ;
         display: inline-block;
+        vertical-align: middle;
+        line-height: 21px;
+        padding-left: 0.5rem;
         }
 
         img {
             display: inline-block;
+            vertical-align: middle;
         }
     }
     
@@ -83,11 +90,15 @@ top: 0px;
             list-style: none;
             display: inline-block;
             margin: 0;
+            line-height: 17px;
+            padding: 2rem 7rem 0 7rem;
+
         }
 
         .nav-item {
             display: inline-block;
-            padding: 0 1rem;
+            padding: 0 0.5rem;
+            font: map-get($fonts, text-3) Lato, sans-serif;
         }
     }
 
@@ -95,20 +106,39 @@ top: 0px;
         display: table-cell;
         vertical-align: middle;
         height: 100%;
+        padding-top: 2rem;
 
         p {
             display: inline-block;
+            vertical-align: middle;
+            font: map-get($fonts, text-3) Lato, sans-serif;
         }
 
         img {
             display: inline-block;
+            vertical-align: middle;
         }
     }
 
 .login-button {
     display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 10rem 0 1.7rem;
     
     button { 
+    vertical-align: middle;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    font: map-get($fonts, text-3) Lato, sans-serif;
+    background-color: transparent;
     color: map-get($colors, background);
+    border: 1px solid;
+
+    &:hover, 
+    &:active {
+        background-color: map-get($colors, background);
+        color: map-get($colors, text);
+    }
     }
 }
