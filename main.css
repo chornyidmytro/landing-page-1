@@ -45,12 +45,12 @@
 .header-logo {
   display: table-cell;
   height: 100%;
-  padding-left: 10rem;
+  padding-left: 12.3rem;
   padding-top: 2rem;
 }
 
 .header-logo h1 {
-  font: 1.125rem bold Lato, sans-serif;
+  font: 700 1.125rem "Lato", sans-serif;
   display: inline-block;
   vertical-align: middle;
   line-height: 21px;
@@ -79,7 +79,7 @@
 .main-nav .nav-item {
   display: inline-block;
   padding: 0 0.5rem;
-  font: 0.875rem normal Lato, sans-serif;
+  font: normal 0.875rem "Lato", sans-serif;
 }
 
 .language-switch {
@@ -92,7 +92,7 @@
 .language-switch p {
   display: inline-block;
   vertical-align: middle;
-  font: 0.875rem normal Lato, sans-serif;
+  font: normal 0.875rem "Lato", sans-serif;
 }
 
 .language-switch img {
@@ -106,18 +106,68 @@
   padding: 2rem 10rem 0 1.7rem;
 }
 
-.login-button button {
+.login-button .button {
   vertical-align: middle;
   height: 40px;
   width: 100px;
   border-radius: 6px;
-  font: 0.875rem normal Lato, sans-serif;
+  font: normal 0.875rem "Lato", sans-serif;
   background-color: transparent;
   color: #ffffff;
   border: 1px solid;
 }
 
-.login-button button:hover, .login-button button:active {
+.login-button .button:hover, .login-button .button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main {
+  top: 116px;
+  display: table-row;
+  position: absolute;
+  width: 100%;
+}
+
+.signup__container {
+  display: block;
+  margin: 8.75rem auto auto auto;
+  text-align: center;
+}
+
+.signup-title {
+  color: #ffffff;
+  line-height: 86px;
+}
+
+.signup-title h1 {
+  font: 700 4.5rem "Lato", sans-serif;
+}
+
+.signup-offer {
+  margin-top: 4.46rem;
+  font: normal 1.5rem "Lato", sans-serif;
+  color: #ffffff;
+  line-height: 36px;
+  text-align: center;
+}
+
+.signup-button {
+  text-align: center;
+}
+
+.signup-button .button-solid {
+  vertical-align: middle;
+  height: 50px;
+  width: 160px;
+  border-radius: 6px;
+  font: normal 0.875rem "Lato", sans-serif;
+  background-color: #ffffff;
+  color: #D52047;
+  border: 1px solid;
+}
+
+.signup-button .button-solid:hover, .signup-button .button-solid:active {
   background-color: #ffffff;
   color: #000000;
 }
