@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 .page {
+  position: absolute;
   font-family: Lato, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
   display: table;
   height: 3922px;
   width: 1440px;
@@ -12,11 +12,12 @@
 .page__body {
   display: table;
   height: 100%;
-  width: 100%;
+  width: 1440px;
   margin: 0;
+  position: absolute;
 }
 
-.background-top {
+.background-main {
   background: -webkit-gradient(linear, left top, right top, from(rgba(213, 32, 71, 0.8)), to(rgba(238, 61, 27, 0.8))), url(img/Rectangle-3.png);
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8)), url(img/Rectangle-3.png);
   position: absolute;
@@ -42,14 +43,14 @@
   height: 100%;
 }
 
-.header-logo {
+.header__logo {
   display: table-cell;
   height: 100%;
   padding-left: 12.3rem;
   padding-top: 2rem;
 }
 
-.header-logo h1 {
+.header__logo .header__logo--title {
   font: 700 1.125rem "Lato", sans-serif;
   display: inline-block;
   vertical-align: middle;
@@ -57,18 +58,18 @@
   padding-left: 0.5rem;
 }
 
-.header-logo img {
+.header__logo .header__logo--image {
   display: inline-block;
   vertical-align: middle;
 }
 
-.main-nav {
+.navigation {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
 }
 
-.main-nav .nav-items {
+.navigation .navigation__list {
   list-style: none;
   display: inline-block;
   margin: 0;
@@ -76,37 +77,37 @@
   padding: 2rem 7rem 0 7rem;
 }
 
-.main-nav .nav-item {
+.navigation .navigation__link {
   display: inline-block;
   padding: 0 0.5rem;
   font: normal 0.875rem "Lato", sans-serif;
 }
 
-.language-switch {
+.language-switcher {
   display: table-cell;
   vertical-align: middle;
   height: 100%;
   padding-top: 2rem;
 }
 
-.language-switch p {
+.language-switcher .language-switcher__name {
   display: inline-block;
   vertical-align: middle;
   font: normal 0.875rem "Lato", sans-serif;
 }
 
-.language-switch img {
+.language-switcher .language-switcher__image {
   display: inline-block;
   vertical-align: middle;
 }
 
-.login-button {
+.login {
   display: table-cell;
   vertical-align: middle;
   padding: 2rem 10rem 0 1.7rem;
 }
 
-.login-button .button {
+.login .login__button {
   vertical-align: middle;
   height: 40px;
   width: 100px;
@@ -117,12 +118,12 @@
   border: 1px solid;
 }
 
-.login-button .button:hover, .login-button .button:active {
+.login .login__button:hover, .login .login__button:active {
   background-color: #ffffff;
   color: #000000;
 }
 
-.main {
+.signup {
   top: 116px;
   display: table-row;
   position: absolute;
@@ -135,28 +136,29 @@
   text-align: center;
 }
 
-.signup-title {
+.signup__title {
   color: #ffffff;
   line-height: 86px;
 }
 
-.signup-title h1 {
+.signup__title .signup__title--text {
   font: 700 4.5rem "Lato", sans-serif;
 }
 
-.signup-offer {
-  margin-top: 4.46rem;
+.signup__offer {
+  margin-top: 2.44rem;
   font: normal 1.5rem "Lato", sans-serif;
   color: #ffffff;
   line-height: 36px;
   text-align: center;
 }
 
-.signup-button {
+.signup__container--action {
   text-align: center;
+  margin-top: 2.44rem;
 }
 
-.signup-button .button-solid {
+.signup__container--action .signup__container--button {
   vertical-align: middle;
   height: 50px;
   width: 160px;
@@ -167,8 +169,136 @@
   border: 1px solid;
 }
 
-.signup-button .button-solid:hover, .signup-button .button-solid:active {
+.signup__container--action .signup__container--button:hover, .signup__container--action .signup__container--button:active {
   background-color: #ffffff;
   color: #000000;
+}
+
+.video-section {
+  position: absolute;
+  top: 782px;
+  height: 500px;
+  width: 1440px;
+  display: inline-block;
+}
+
+.video-section__container {
+  display: block;
+  position: absolute;
+  margin: 140px 0 0 165px;
+  width: 31%;
+  height: 49.2%;
+}
+
+.video-section__title {
+  font: 700 2.25rem "Lato", sans-serif;
+  font-weight: normal;
+  line-height: 43px;
+}
+
+.video-section__text {
+  font: normal 0.875rem "Lato", sans-serif;
+  line-height: 140%;
+}
+
+.video-section__link {
+  font: normal 0.875rem "Lato", sans-serif;
+  line-height: 140%;
+  color: #D52047;
+}
+
+.video-section__button {
+  margin: 217px 672px 217px 702px;
+  position: absolute;
+  height: 66px;
+  width: 66px;
+}
+
+.play-button {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.video-section__background {
+  margin: 94px 260px 95px 735px;
+}
+
+.features {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  display: block;
+  top: 1282px;
+  background-color: #FAFAFA;
+}
+
+.features__title {
+  position: absolute;
+  width: 1110px;
+  top: 63px;
+  text-align: center;
+  margin: 0 165px 0 165px;
+}
+
+.features__title--main {
+  font: 700 2.25rem "Lato", sans-serif;
+  font-weight: normal;
+  line-height: 43px;
+  margin: auto;
+}
+
+.features__container {
+  top: 181px;
+  position: relative;
+  display: block;
+  height: 250px;
+  margin: 63px 120px 0 120px;
+  text-align: center;
+}
+
+.features__image {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.features__info {
+  position: absolute;
+  top: 338px;
+  width: 1440px;
+  text-align: center;
+}
+
+.features__item {
+  width: 293px;
+  height: 198px;
+  display: inline-block;
+  overflow: visible;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 43.5px;
+  vertical-align: middle;
+}
+
+.features__item--title {
+  font: 700 1.125rem "Lato", sans-serif;
+  line-height: 22px;
+  margin: 32px 32px 20px 32px;
+}
+
+.features__item--text {
+  font: normal 0.75rem "Lato", sans-serif;
+  line-height: 150%;
+  margin: 0 32px 5px 32px;
+  padding-bottom: 1rem;
+}
+
+.features__item--link {
+  font: normal 0.75rem "Lato", sans-serif;
+  line-height: 150%;
+  color: #D52047;
 }
 /*# sourceMappingURL=main.css.map */
