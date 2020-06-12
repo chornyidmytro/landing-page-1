@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+}
+
 .page {
   position: absolute;
   font-family: Lato, sans-serif;
@@ -11,20 +15,20 @@
 
 .page__body {
   display: table;
-  height: 100%;
+  height: 3922px;
   width: 1440px;
   margin: 0;
-  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .background-main {
   background: -webkit-gradient(linear, left top, right top, from(rgba(213, 32, 71, 0.8)), to(rgba(238, 61, 27, 0.8))), url(img/Rectangle-3.png);
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8), rgba(238, 61, 27, 0.8)), url(img/Rectangle-3.png);
   position: absolute;
-  width: 100%;
+  width: 1440px;
   height: 782px;
-  left: 0px;
-  top: 0px;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -180,6 +184,7 @@
   height: 500px;
   width: 1440px;
   display: inline-block;
+  background-color: #ffffff;
 }
 
 .video-section__container {
@@ -225,7 +230,7 @@
 }
 
 .features {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 660px;
   display: block;
@@ -300,5 +305,82 @@
   font: normal 0.75rem "Lato", sans-serif;
   line-height: 150%;
   color: #D52047;
+}
+
+.technology {
+  position: absolute;
+  top: 1942px;
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.technology__info {
+  display: inline-block;
+  margin: 170px 150px 104px 150px;
+  height: 226px;
+  width: 1140px;
+}
+
+.technology__item {
+  display: inline-block;
+  width: 255px;
+  height: 226px;
+  text-align: center;
+  margin: 0 13.5px;
+}
+
+.technology__item--number {
+  font-size: 100px;
+  line-height: 120px;
+  font-family: 'Lato', sans-serif;
+  margin: 0 69px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.technology__item--title {
+  font: 700 1.125rem "Lato", sans-serif;
+  line-height: 22px;
+  margin: 19px 65px 0 65px;
+  text-align: center;
+}
+
+.technology__item--text {
+  font: normal 0.75rem "Lato", sans-serif;
+  line-height: 150%;
+  margin: 10px 32px 0 32px;
+}
+
+.technology__icon {
+  background-color: transparent;
+  position: absolute;
+  display: inline-block;
+  height: 80px;
+  top: 230px;
+  margin: 0 252px;
+  width: 936px;
+}
+
+.technology__icon--image1 {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.technology__icon--image2 {
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 208px;
+}
+
+.technology__icon--image3 {
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 216px;
+}
+
+.technology__icon--image4 {
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 222px;
 }
 /*# sourceMappingURL=main.css.map */
