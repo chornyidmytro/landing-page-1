@@ -6,7 +6,7 @@ $colors: (
     background-features: #FAFAFA,
     text: #000000,
     main: #EE3D1B,
-    secondary: #D52047,
+    secondary: #ED4C5C,
 );
 
 $fonts: (
@@ -404,4 +404,136 @@ body {
     vertical-align: middle;
     text-align: center;
     margin-left: 222px;
+}
+
+.app-download {
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 2442px;
+    background-color: map-get($colors, secondary);
+    display: inline-block;
+}
+.app-download__info {
+    margin: 122px 0 0 165px;
+    width: 445px;
+    color: map-get($colors, background);
+}
+
+.app-download__info--title {
+    font: map-get($fonts, title-2) 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 43px;
+}
+
+.app-download__info--text {
+    font: map-get($fonts, text-3) 'Lato', sans-serif;
+    line-height: 140%;
+}
+.app-download__info--link {
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 20px;
+}
+.app-download__image {
+    position: absolute;
+    display: inline-block;
+    left: 691px;
+    top: 94px;
+}
+
+.app-download__image--left {
+    position: absolute;
+    margin-top: 22px;
+}
+
+.app-download__image--right {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 150px;
+}
+
+.app-download__image--top {
+    position: absolute;
+    margin-left: 44px;
+}
+
+.contact {
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 2942px;
+    display: inline-block;
+}
+
+.contact__info {
+    display: inline-block;
+    margin: 117px 0 0 165px;
+    width: 445px;
+}
+.contact__info--title {
+    font: map-get($fonts, title-2) 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 43px;
+}
+
+.contact__info--text {
+    font: map-get($fonts, text-3) 'Lato', sans-serif;
+    line-height: 140%;
+    margin-top: 40px;
+}
+
+.contact__form {
+    vertical-align: top;
+    margin: 117px 0 0 114px;
+    display: inline-block;
+}
+.contact__form--input {
+    text-align: left;
+}
+.first-name,
+.last-name {
+    width: 255px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.last-name {
+    margin-left: 30px;
+}
+
+.phone-number,
+.select-service {
+    margin-top: 24px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-left: 30px;
+    width: 576px;
+    height: 60px;
+}
+
+.select-service {
+    width: 607px;
+    
+}
+.contact__form--button {
+    margin-top: 24px;
+    width: 160px;
+    height: 50px;
+    background-color: map-get($colors, secondary);
+    color: map-get($colors, background);
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    line-height: 17px;
+    font: map-get($fonts, text-3) 'Lato', sans-serif;
 }
