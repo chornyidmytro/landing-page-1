@@ -212,11 +212,19 @@ body {
   color: #ED4C5C;
 }
 
+.video-section__link:active, .video-section__link:hover {
+  cursor: pointer;
+}
+
 .video-section__button {
   margin: 217px 672px 217px 702px;
   position: absolute;
   height: 66px;
   width: 66px;
+}
+
+.video-section__button:active, .video-section__button:hover {
+  cursor: pointer;
 }
 
 .play-button {
@@ -305,6 +313,10 @@ body {
   font: normal 0.75rem "Lato", sans-serif;
   line-height: 150%;
   color: #ED4C5C;
+}
+
+.features__item--link:active, .features__item--link:hover {
+  cursor: pointer;
 }
 
 .technology {
@@ -417,6 +429,10 @@ body {
   padding-right: 20px;
 }
 
+.app-download__info--link:active, .app-download__info--link:hover {
+  cursor: pointer;
+}
+
 .app-download__image {
   position: absolute;
   display: inline-block;
@@ -477,6 +493,17 @@ body {
   text-align: left;
 }
 
+input:active,
+input:hover {
+  background-color: rgba(28, 212, 21, 0.5);
+  color: #000000;
+}
+
+input:active:focus,
+input:hover:focus {
+  outline: none;
+}
+
 .first-name,
 .last-name {
   width: 255px;
@@ -507,7 +534,11 @@ body {
 }
 
 .select-service {
-  width: 607px;
+  width: 608px;
+}
+
+.select-service:focus {
+  outline: none;
 }
 
 .contact__form--button {
@@ -520,5 +551,68 @@ body {
   border-radius: 6px;
   line-height: 17px;
   font: normal 0.875rem "Lato", sans-serif;
+}
+
+.contact__form--button:active, .contact__form--button:hover {
+  color: #000000;
+  border-color: #000000;
+  cursor: pointer;
+}
+
+.contact__form--button:focus {
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  width: 1440px;
+  height: 435px;
+  top: 3487px;
+  background-color: #FAFAFA;
+  display: table-row;
+  text-align: left;
+}
+
+.footer__container {
+  margin-left: 166px;
+  margin-top: 85px;
+}
+
+.footer__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin-right: 80px;
+  text-align: left;
+}
+
+.footer__item--title {
+  font: 700 1.125rem "Lato", sans-serif;
+  line-height: 22px;
+  margin-bottom: 33px;
+}
+
+.footer__item--text {
+  font: normal 0.75rem "Lato", sans-serif;
+  line-height: 150%;
+}
+
+.footer__copyright {
+  margin-top: 117px;
+}
+
+.footer__item--text-link {
+  font: normal 0.75rem "Lato", sans-serif;
+  line-height: 150%;
+  display: block;
+}
+
+.footer__item--text-link:active, .footer__item--text-link:hover {
+  color: #ED4C5C;
+  cursor: pointer;
+}
+
+.footer__item--image-link {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

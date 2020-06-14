@@ -233,6 +233,11 @@ body {
     font: map-get($fonts, text-3) 'Lato', sans-serif;
     line-height: 140%;
     color: map-get($colors, secondary);
+
+    &:active,
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .video-section__button {
@@ -240,6 +245,11 @@ body {
     position: absolute;
     height: 66px;
     width: 66px;
+
+    &:active,
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .play-button {
@@ -327,6 +337,11 @@ body {
     font: map-get($fonts, text-4) 'Lato', sans-serif;
     line-height: 150%;
     color: map-get($colors, secondary);
+    
+    &:active,
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .technology {
@@ -435,6 +450,11 @@ body {
     vertical-align: middle;
     display: inline-block;
     padding-right: 20px;
+
+    &:active,
+    &:hover {
+        cursor: pointer;
+    }
 }
 .app-download__image {
     position: absolute;
@@ -493,6 +513,17 @@ body {
 .contact__form--input {
     text-align: left;
 }
+
+input:active,
+input:hover {
+        background-color: rgba($color: #1cd415, $alpha: 0.5);
+        color: map-get($colors, text);
+
+        &:focus {
+            outline: none;
+        }
+}
+
 .first-name,
 .last-name {
     width: 255px;
@@ -523,7 +554,11 @@ body {
 }
 
 .select-service {
-    width: 607px;
+    width: 608px;
+
+    &:focus {
+        outline: none;
+    }
     
 }
 .contact__form--button {
@@ -536,4 +571,67 @@ body {
     border-radius: 6px;
     line-height: 17px;
     font: map-get($fonts, text-3) 'Lato', sans-serif;
+
+    &:active,
+    &:hover {
+        color: map-get($colors, text);
+        border-color: map-get($colors, text);
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 435px;
+    top: 3487px;
+    background-color: map-get($colors, background-features);
+    display: table-row;
+    text-align: left;
+   
+}
+
+.footer__container {
+    margin-left: 166px;
+    margin-top: 85px;
+}
+
+.footer__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 80px;
+    text-align: left;
+}
+.footer__item--title {
+    font: map-get($fonts, text-2) 'Lato', sans-serif;
+    line-height: 22px;
+    margin-bottom: 33px;
+}
+.footer__item--text {
+    font: map-get($fonts, text-4) 'Lato', sans-serif;
+    line-height: 150%;
+}
+
+.footer__copyright {
+    margin-top: 117px;
+}
+
+.footer__item--text-link {
+    font: map-get($fonts, text-4) 'Lato', sans-serif;
+    line-height: 150%;
+    display: block;
+
+    &:active,
+    &:hover {
+        color: map-get($colors, secondary);
+        cursor: pointer;
+    }
+}
+.footer__item--image-link {
+    cursor: pointer;
 }
